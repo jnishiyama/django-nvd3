@@ -73,7 +73,7 @@ def load_chart(chart_type, series, container, kw_extra, *args, **kwargs):
 
 
 @register.simple_tag
-def include_container(include_container, height=400, width=600):
+def include_container(include_container, height=400, width=None):
     """
     Include the html for the chart container and css for nvd3
     This will include something similar as :
